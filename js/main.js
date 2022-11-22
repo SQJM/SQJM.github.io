@@ -63,8 +63,8 @@ function ppx(){
 	var h = window.screen.height;
 	//alert(w + ":" + h);
 	
-	if (w <= 400){
-		document.getElementsByTagName('body')[0].style.zoom=0.75;
+	if (w <= 395){
+		document.getElementsByTagName('body')[0].style.zoom=0.8;
 	}else{
     document.getElementsByTagName('body')[0].style.zoom=1;
 }
