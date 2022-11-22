@@ -38,26 +38,7 @@ function AddFavorite(){
 		}
 	}
 }
-function date(){
-	let oDate = new Date();
-	let y=oDate.getFullYear();
-	//获取当前年份
-	let M=oDate.getMonth()+1;
-	//获取当前月份，由于获取的是0~11，所以还应该再+1
-	let day=oDate.getDate();
-	//获取当前日份
-	let h=oDate.getHours();
-	//获取当前小时
-	let m=oDate.getMinutes();
-	//获取当前分钟
-	let s=oDate.getSeconds();
-	//获取当前秒数
-	let week=oDate.getDay()+1;
-	//获取今天星期
-	var x = document.getElementById("Date");
-	x.innerHTML = "日期:" + y + "年" + M + "月" + day + "号" + h + "点" + m + "分" + s + "秒";
-}
-date();
+
 function ppx(){
 	var w = window.screen.width;
 	var h = window.screen.height;
