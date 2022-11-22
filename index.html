@@ -45,12 +45,37 @@
 			}
 		</script>
 		<style>
+	  .helloword{
+		color: #f35626;
+		background: coral;
+		background-image: -webkit-linear-gradient(45deg,#f35626,#feab3a);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-animation: hue 6s infinite linear;
+		}
+
+@-webkit-keyframes hue {
+
+from {
+-webkit-filter: hue-rotate(0deg);
+}
+
+to {
+-webkit-filter: hue-rotate(-360deg);
+}
+
+}
+
+.bj{
+	
+}
+
 		</style>
 	</head>
-	<body>
+	<body class="bj" style="background-size: 100% 100%;">
 		<!--标头-->
 		<header>
-			<h3>WStudio<input class="h_t_b" type="button" value="官网" onclick="oW()"></h3>
+			<h3 class="wstudiot">WStudio<input class="h_t_b" type="button" value="官网" onclick="oW()"></h3>
 		</header> <!--导航-->
 		<nav>
 		</nav>
@@ -62,16 +87,16 @@
 					<dl>
 						<dt></dt>
 						<dd>
-							<input id="homePage" type="button" value="官网▽" onclick="get_1()" style="border-style: none;">
+							<input id="homePage" type="button" value="官网▽" onclick="get_1()" style="border-style: none;color: #74FFFF;">
 						</dd>
 						<dd id="ie_1_1" class="hover_menu"><a href="personal_home_page/index.html"> ▶个人主页</a>
 						</dd>
 					</dl>
-					<p style="color: #FFFFFF;font-size: 12px;">————————</p>
+					<p style="color: #FFFFFF;font-size: 12px;">——————————</p>
 					<dl>
 						<dt></dt>
 						<dd>
-							<input id="homePage_1" type="button" value="在线工具▽" onclick="get_2()" style="border-style: none;">
+							<input id="homePage_1" type="button" value="在线工具▽" onclick="get_2()" style="border-style: none;color: #74FFFF;">
 						</dd>
 						<dd id="ie_2_1" class="hover_menu">
 							▶test
@@ -83,9 +108,15 @@
 				</div>
 			</div> <!--主体-->
 			<div class="main" id="Main" style="vertical-align: top;">
-				<h3>Hello Word!</h3>
+				<h1 style="" class="helloword">Hello Word!</h1>
+				<hr>
 				<p id="Date" style="font-size: 8px;color: #9F9F9F;">日期:</p>
-<br>
+				<p style="line-height: 0.3em;;color: rgba(0,0,0,0);">-</p>
+				<p style="background-color: #FF4651;"><span style="color: #FF8B8B;">---</span>WStudio于2022年11月22号成立!</p>
+				<p style="line-height: 3px;color: rgba(0,0,0,0);">-</p>
+				<p style="background-color: #D1B9FF;display: inline;"><span style="color: #FF8B8B;">---</span>WStudio的主要</p>
+				<p style="color: #8CD373;">[WCreate]<span style="color: #74FFFF;">---</span><a href="" style="color: #CA92A5;"><u>官网</u></a></p>
+				<p style="font-size: 20px;color: rgba(0,0,0,0);">-</p>
 				<h6>End...</h6>
 			</div>
 		</div> <!--底部-->
