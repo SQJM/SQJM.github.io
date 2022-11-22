@@ -24,12 +24,14 @@ body
 	border-color: #575757;
 	
 	//margin: 1 auto;
-	vertical-align: top; //与左侧div顶部对齐
 }
 
 #Main
 {
-	//white-space: ;
+	
+	overflow: hidden;
+	white-space: wrap;
+    
 	border-top-width: 0px;
 	border-bottom-width: 0px;
 	border-right-width: 0px;
@@ -86,7 +88,7 @@ dd
 	line-height: 2em;
 	font-size: 16px;
 	border-radius: 2px 5px 5px 2px;
-	background-color: #C0C0C0;
+	background-color: #7B7B7B;
     transition: all 0.5s;
 }
 
@@ -102,7 +104,7 @@ dd
 	line-height: 2em;
 	font-size: 16px;
 	border-radius: 2px 5px 5px 2px;
-	background-color: #C0C0C0;
+	background-color: #7B7B7B;
     transition: all 0.5s;
 }
 
@@ -119,7 +121,7 @@ dd
     border-radius: 2px 4px 4px 2px;
 	text-align: center;
     margin:0 auto;
-	background-color: #989898;
+	background-color: #CCCCCC;
 
 	border-style: solid;
 	border-width: 1px;

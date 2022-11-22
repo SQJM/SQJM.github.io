@@ -6,6 +6,12 @@
 
 	font-family: 微软雅黑,sans-serif;
     
+	word-break: break-all;
+}
+
+body
+{
+	min-width: 500px;
 }
 
 a
