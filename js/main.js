@@ -65,7 +65,9 @@ function ppx(){
 	
 	if (w <= 400){
 		document.getElementsByTagName('body')[0].style.zoom=0.75;
-	}
+	}else{
+    document.getElementsByTagName('body')[0].style.zoom=1;
+}
 }
 ppx();
 //网页鼠标点击特效
