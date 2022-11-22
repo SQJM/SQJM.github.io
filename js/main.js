@@ -12,36 +12,62 @@ map.href = "https://m.amap.com/";
 //关于
 var about = document.getElementById("about");
 about.href = "";
-
 //修改footer
 function footer_(){
-    var h = document.getElementById("b_box").scrollHeight;
+	var h = document.getElementById("b_box").scrollHeight;
 	document.getElementById("footer_").style.height = h + "px";
 }
 footer_();
-
 //官网
 function oW(){
-    window.location.replace('index.html');
+	window.location.replace('index.html');
 }
-
 //收藏本站
-function AddFavorite() {
-var title = "WStudio";
-var url = "#";
-    try {
-        window.external.addFavorite(url, title);
-    }
-    catch (e) {
-        try {
-            window.sidebar.addPanel(title, url, "");
-        }
-        catch (e) {
-            alert("抱歉，您所使用的浏览器无法完成此操作.\n\n加入收藏失败，请使用Ctrl+D进行添加或手动添加.");
-        }
-    }
+function AddFavorite(){
+	var title = "WStudio";
+	var url = "#";
+	try{
+		window.external.addFavorite(url, title);
+	}
+	catch (e){
+		try{
+			window.sidebar.addPanel(title, url, "");
+		}
+		catch (e){
+			alert("抱歉，您所使用的浏览器无法完成此操作.\n\n加入收藏失败，请使用Ctrl+D进行添加或手动添加.");
+		}
+	}
 }
-
+function date(){
+	let oDate = new Date();
+	let y=oDate.getFullYear();
+	//获取当前年份
+	let M=oDate.getMonth()+1;
+	//获取当前月份，由于获取的是0~11，所以还应该再+1
+	let day=oDate.getDate();
+	//获取当前日份
+	let h=oDate.getHours();
+	//获取当前小时
+	let m=oDate.getMinutes();
+	//获取当前分钟
+	let s=oDate.getSeconds();
+	//获取当前秒数
+	let week=oDate.getDay()+1;
+	//获取今天星期
+	var x = document.getElementById("Date");
+	x.innerHTML = "日期:" + y + "年" + M + "月" + day + "号" + h + "点" + m + "分" + s + "秒";
+}
+date();
+function ppx(){
+	var w = window.screen.width;
+	var h = window.screen.height;
+	//alert(w + ":" + h);
+	
+	if (w <= 400){
+		document.getElementsByTagName('body')[0].style.zoom=0.75;
+	}
+}
+ppx();
 //网页鼠标点击特效
 (function (){
 	var a_idx = 0;
@@ -88,7 +114,6 @@ var url = "#";
 	}
 }
 ());
-
 //文字选中
 document.body.onselectstart = function(){
 	　　return false;
