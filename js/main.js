@@ -50,6 +50,19 @@ function ppx(){
     document.getElementsByTagName('body')[0].style.zoom=1;
 }
 }
+
+// 禁用双击放大
+var lastTouchEnd = 0;
+document.documentElement.addEventListener('touchend', function (event) {
+	var now = Date.now();
+	if (now - lastTouchEnd <= 300) {
+		event.preventDefault();
+	}
+	lastTouchEnd = now;
+}, {
+	passive: false
+ 
+});
 ppx();
 //网页鼠标点击特效
 (function (){
