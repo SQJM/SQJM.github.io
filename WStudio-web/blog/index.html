@@ -1,0 +1,217 @@
+<!--wjm-->
+
+<!DOCTYPE html>
+<html lang="zh-CMN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--web图标-->
+    <link rel="shortcut icon" href="../WS-icon.png" />
+    <!--导入css-->
+    <link rel="stylesheet" href="../css/index-WStudio.css" />
+    <link rel="stylesheet" href="css/index-blog.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <style></style>
+    <title>WorldStudio</title>
+  </head>
+
+  <div id="Fcout"></div>
+
+  <body id="body">
+    <div>
+      <div class="headerDiv">
+        <p class="break" style="line-height: 1.5em">-</p>
+        <h1 class="titleBj">WStudio</h1>
+        <h1 class="title">WStudio</h1>
+        <p class="break" style="line-height: 1.2em">-</p>
+      </div>
+      <p class="break">-</p>
+    </div>
+
+    <div style="height: 3em">-</div>
+
+    <div>
+      <center>
+        <div id="bkM">
+          <div id="imgM">
+            <img id="imgT" src="img/title/imgBj.png" />
+          </div>
+          <p class="imgPt">世界.</p>
+
+          <p class="break">-</p>
+          <p class="break">-</p>
+          <p class="break">-</p>
+
+          <hr />
+
+          <h1 class="titleWelcome">Hello!</h1>
+          <p
+            id="Date"
+            style="color: #191919; background-color: rgba(255, 255, 255, 0.5)"
+          ></p>
+
+          <p class="break">-</p>
+          <p class="break">-</p>
+
+          <div class="bodyM">
+            <p class="break">-</p>
+            <div id="mainL" class="mainL">
+              <p class="break">-</p>
+              <p class="break">-</p>
+
+              <div id="TagM" class="TagM">
+                <span>
+                  <span id="Tag">官方</span>
+                  <button id="taG1" class="taG" onclick="tagF();">
+                    全部文章
+                  </button>
+                  <button id="taG2" class="taG" onclick="tagF1();"></button>
+                </span>
+              </div>
+              <p class="break">-</p>
+
+              <div id="mainM" class="mainM"></div>
+            </div>
+
+            <div class="mainR">
+              <div class="boxA">
+                <div>
+                  <dl>
+                    <dt style="line-height: 1.3em">分类</dt>
+
+                    <dd><button onclick="official();">官方</button></dd>
+                    <p class="break">-</p>
+                    <dd><button onclick="courseOfStudy();">教程</button></dd>
+                    <p class="break">-</p>
+                  </dl>
+                </div>
+              </div>
+
+              <p class="break">-</p>
+              <p class="break">-</p>
+              <p class="break">-</p>
+
+              <div class="boxB">
+                <div>
+                  <dl id="boxRNew">
+                    <dt style="line-height: 1.3em">热门</dt>
+
+                    <p class="break">-</p>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <p class="break">-</p>
+          </div>
+        </div>
+        <div id="bkT">
+          <div style="width: 90%">
+            <img style="width: 100%" src="img/title/imgBj.png" />
+          </div>
+          <hr />
+          <div>
+            <h3 style="font-size: 1.6em">标题</h3>
+          </div>
+
+          <div>
+            <p
+              style="
+                font-size: 0.6em;
+                color: rgb(107, 107, 107);
+                line-height: 1.3em;
+              "
+            >
+              时间
+            </p>
+          </div>
+          <hr />
+          <div class="divbkn">
+            内容
+          </div>
+          <div>
+            <p style="text-align: left;text-indent: 2em;">@</p>
+          </div>
+        </div>
+      </center>
+    </div>
+
+    <div id="audioT">
+      <input
+        id="Amodel"
+        class="audioB"
+        type="image"
+        src="img/icon/顺序.png"
+        onclick="model();"
+      />
+      <input
+        id="Aup"
+        class="audioB"
+        type="image"
+        src="img/icon/上一个.png"
+        onclick="audioUp();"
+      />
+      <input
+        id="Adown"
+        class="audioB"
+        type="image"
+        src="img/icon/下一个.png"
+        onclick="audioDown();"
+      />
+      <!--<input id="Alist" class="audioB" type="image" src="img/icon/歌单.png" onclick="audioList();">-->
+      <input
+        id="ARL"
+        class="audioB"
+        type="image"
+        src="img/icon/切换.png"
+        onclick="audioRL();"
+      />
+      <div id="audioM">name</div>
+      <p class="break" style="line-height: 0.5em">-</p>
+      <div id="jsAo">
+        <audio
+          id="jsAudio"
+          src="js/rain.mp3"
+          controls
+          controlsList="nodownload"
+        ></audio>
+      </div>
+    </div>
+  </body>
+  <p class="break">-</p>
+  <p class="break">-</p>
+  <div style="background-color: #8bb0ff">
+    <h3>测试</h3>
+  </div>
+  <hr />
+  <footer class="footer">
+    <center>
+      <p class="break">-</p>
+      <div class="footerBox">
+        <dl id="dl_friend">
+          <dt>友链</dt>
+          <p class="break" style="line-height: 0.8em">-</p>
+        </dl>
+      </div>
+      <div class="footerBox">
+        <dl id="dl_help">
+          <dt>帮助</dt>
+          <p class="break" style="line-height: 0.8em">-</p>
+        </dl>
+      </div>
+      <p class="break">-</p>
+      <p class="break">-</p>
+      <div id="footerTagBox"></div>
+    </center>
+  </footer>
+  <hr />
+  <p id="Copyright"></p>
+  <!--js-->
+  <script type="text/javascript" src="../js/main-style.js"></script>
+  <script type="text/javascript" src="js/index-blog.js"></script>
+  <script type="text/javascript" src="../js/main-new.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+</html>
