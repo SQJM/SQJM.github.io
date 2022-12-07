@@ -25,9 +25,9 @@ function Copyright() {
 Copyright();
 
 //官网
-var WS_Web = "http://192.168.0.105:5500/WStudio-web/index-WStudio.html";
+var WS_Web = "https://worldstudio-com.github.io/worldstudio.github.io/";//http://192.168.0.105:5500/WStudio-web/index-WStudio.html
 //使用条款
-var WS_use = "";
+var WS_use = "WStudio-web/termsForUsage.html";
 //关于我们
 var WS_Us = "";
 //qq群
