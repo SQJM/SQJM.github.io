@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+}
+
+html {
+    background-image: url(../../bj/8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.mainM {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 666px;
+    max-height: 1500px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px #909090;
+}
+
+.mainBox {
+    display: inline-block;
+    width: 280px;
+    height: 160px;
+    background-color: #B1F3DD;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 8px;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 2px 1px #F6F6F6;
+    animation: newMB 2s;
+}
+
+@keyframes newMB {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        background-color: #B1F3DD;
+        border-color: #FFFFFF;
+    }
+}
+
+.mainBox:hover {
+    box-shadow: 0px 1px 3px 1px #FFFFFF;
+}
+
+
+.titleBox{
+    border-style: solid;
+    border-color: aqua;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px #000000;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    margin: 3px;
+    padding: 5px;
+    width: 80%;
+    font-size: 1.2em;
+}

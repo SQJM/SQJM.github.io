@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'TangYuan';
+    src: url(../fonts/糖圆体.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: TangYuan, sans-serif;
+    zoom: 1;
+
+    font-size: 1em;
+
+}
+
+html {
+
+    /* -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); */
+
+    /* 禁止文字选择 */
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+
+    width: 100%;
+
+    scrollbar-width: 0px;
+    overflow-x: hidden;
+}
+
+#footer {
+    transition: all 0.5s;
+    /* animation: footera 3s; */
+}
+
+@keyframes footera {
+    0% {
+        position: fixed;
+        left: 100%;
+        top: 100%;
+        background-color: #FFFFFF;
+    }
+
+    100% {
+        position: fixed;
+        left: 0%;
+        top: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+#bodyMain {
+    transition: all 0.5s;
+    /* animation: bodyMain 3s; */
+}
+
+@keyframes bodyMain {
+    0% {
+        position: fixed;
+        top: -100%;
+        background-color: #FFFFFF;
+    }
+
+    100% {
+        position: fixed;
+        top: 0%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+
+#Date {
+    color: #797979;
+    font-size: 8px;
+    line-height: 1.2em;
+    margin: 5px;
+}
+
+button {
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+
+button:hover {
+    outline: none;
+    color: #579F98;
+    border-bottom-color: #9A9A9A;
+    border-bottom-width: 2px;
+}
+
+button:focus {
+    outline: none;
+    color: #2B829E;
+    border-bottom-color: #9A9A9A;
+    border-bottom-width: 2px;
+}
+
+body {
+    /* transition: all 0.5s; */
+    width: 100%;
+}
+
+a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #292929;
+    outline: none;
+}
+
+
+#effect_0 {
+    white-space: nowrap;
+}
+
+
+.coutBj {
+    position: fixed;
+    z-index: 888;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+}
+
+#coutIMG {
+    z-index: 888;
+    width: 99999px;
+    height: 99999px;
+    opacity: 0.5;
+}
+
+#Fcout {
+    width: 100%;
+}
+
+.cout {
+    width: 120px;
+    border-style: sloid;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    top: -50%;
+    background-color: #F9F9F9;
+    border-color: #737373;
+    box-shadow: 2px 3px 5px 3px #B4B4B4;
+    animation: coutS 1s;
+    animation-fill-mode: forwards;
+    transition: all 0.5s;
+}
+
+#coutM {}
+
+.coutT {
+    z-index: 1000;
+    box-shadow: 2px 3px 5px 3px #B4B4B4;
+    line-height: 1.2em;
+    text-shadow: 1px 1px 1px #F1F1F1;
+    font-size: 1.5em;
+    background-color: #FF747F;
+    border-style: sloid;
+    transition: all 0.8s;
+    border-radius: 3px;
+    width: 80%;
+}
+
+.coutT:hover {
+    box-shadow: 1px 2px 3px 2px #CBCBCB;
+}
+
+.coutE {
+    width: 92%;
+    box-shadow: 2px 3px 5px 3px #B4B4B4;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    background-color: #8BB0FF;
+    border-style: sloid;
+    transition: all 0.8s;
+    border-radius: 5px;
+    text-align: left;
+    text-indent: 1.5em;
+}
+
+.coutE:hover {
+    box-shadow: 1px 2px 3px 2px #B4B4B4;
+}
+
+#coutBtn {
+    border-style: sloid;
+    border-color: #76B0B9;
+    border-radius: 5px;
+    background-color: #69D2E7;
+    line-height: 1.1em;
+    font-size: 1.3em;
+    transition: all 0.8s;
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 2px 3px 5px 3px #B4B4B4;
+}
+
+#coutBtn:hover {
+    box-shadow: 1px 2px 3px 2px #B4B4B4;
+    background-color: #DDDDDD;
+}
+
+@keyframes coutS {
+    0% {
+        top: -5%;
+    }
+
+    100% {
+        top: 38%;
+    }
+}
+
+/* audio */
+audio {
+    width: 300px;
+    transition: all 0.5s;
+}
+
+audio::media-controls-panel {
+    background-color: #E8FFFF;
+}
+
+#audioT {
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 0px;
+    width: 118px;
+    height: 25px;
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: #C2C2C2;
+    border-radius: 6px;
+    vertical-align: top;
+    box-shadow: 0px 0px 2px 1px #012C00;
+}
+
+#jsAo {
+    position: fixed;
+    transition: all 0.5s;
+}
+
+#audioM {
+    position: relative;
+    top: 0%;
+    display: block;
+    line-height: 1.1em;
+    width: 180%;
+    height: 1.2em;
+    background-color: #FFFFFF;
+    transition: all 0.8s;
+    border-style: solid;
+    border-color: #C2C2C2;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 1px #012C00;
+}
+
+#audioL {
+    display: inline-block;
+    line-height: 1.5em;
+    width: 50%;
+    animation: aLS 2s;
+    background-color: #FFFFFF;
+    transition: all 0.8s;
+    border-style: solid;
+    border-color: #C2C2C2;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 2px 1px #012C00;
+}
+
+#audioL dd:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+@keyframes aLS {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.audioB {
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.audioB:hover {
+    outline: none;
+}
+
+#Amodel {
+    width: 25px;
+}
+
+#Aup {
+    width: 25px;
+}
+
+#Adown {
+    width: 25px;
+}
+
+#Alist {
+    width: 25px;
+}
+
+#ARL {
+    display: inline-block;
+    width: 25px;
+}
+
+
+
+
+#cssload_box {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    height: 15px;
+    top: 43%;
+    text-align: right;
+}
+
+#cssload_0 {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    top: 38%;
+    font-size: 1.1em;
+    text-shadow: 1px 1px #F3A2FF;
+    text-align: right;
+    color: #ffffff;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg, #f35626, #feab3a);
+    animation: cssload_0_ 4s infinite linear;
+
+}
+
+@keyframes cssload_0_ {
+    0% {
+        filter: hue-rotate(0deg);
+        width: 60px;
+    }
+
+
+    100% {
+        filter: hue-rotate(-360deg);
+        width: 100%;
+    }
+}
+
+
+main {
+    
+}
