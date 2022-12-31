@@ -30,7 +30,7 @@ function Copyright() {
 Copyright();
 
 //官网
-var WS_Web = "https://worldstudio-com.github.io/worldstudio.github.io/"; //http://192.168.0.105:5500/WStudio-web/index-WStudio.html
+var WS_Web = "https://worldstudio.netlify.app";
 //使用条款
 var WS_use = "WStudio-web/termsForUsage.html";
 //关于我们
@@ -92,10 +92,10 @@ function setFooterBox(addqq, addDesktop, addThis) {
 /*底部*/
 function goWS() {
   //官网
-  if (
-    window.location.pathname == "/WStudio-web/index-WStudio.html" ||
-    window.location.pathname == "/wstudio-web/index-wstudio"
-  ) {
+  if (window.location.pathname == "/WStudio-web/index-WStudio.html"){
+    cout("WStudio提示您", "您当前已经在此了.");
+  }
+  if (window.location.pathname == "/wstudio-web/index-wstudio") {
     cout("WStudio提示您", "您当前已经在此了.");
   } else {
     window.location.href = WS_Web;
@@ -109,7 +109,7 @@ function addqq() {
 function AddFavorite() {
   //网站收藏
   var title = "WStudio";
-  var url = "https://github.com/WorldStudio-com/worldstudio.github.io.git";
+  var url = "https://worldstudio.netlify.app";
   try {
     window.external.addFavorite(url, title);
   } catch (e) {
@@ -123,7 +123,7 @@ function AddFavorite() {
 
 function toDesktop() {
   //添加桌面
-  var sUrl = "https://github.com/WorldStudio-com/worldstudio.github.io.git";
+  var sUrl = "https://worldstudio.netlify.app";
   var sName = "WStudio";
   try {
     var WshShell = new ActiveXObject("WScript.Shell");
