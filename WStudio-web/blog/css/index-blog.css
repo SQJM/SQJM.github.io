@@ -63,6 +63,14 @@ p {
     margin: 3px;
 }
 
+#BlogGratuito_Window{
+    position: fixed;
+    top: 45%;
+    border-radius: 10px;
+    font-size: 5em;
+    background-color: #00ffe5;
+}
+
 #Blog_HeadM{
     width: 100%;
     z-index: 999;
