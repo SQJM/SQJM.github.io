@@ -25,7 +25,7 @@
         <button class="Blog_TitleBtn" id="Blog_HomePage" onclick="BlogGratuito_HomePage();">首页</button>
       </div>
     </div>
-    <div id="Blog_MainBox">
+    <div id="Blog_MainBox" style="top: 80px;position: relative;">
       <div id="Blog_MainBoxLM">
         <div id="Blog_NavigationBar">
           <p id="BlogGratuito_NavigationBarBtnBox">
@@ -39,15 +39,7 @@
           <div id="BlogGratuito_MainBoxArticle">
 
           </div>
-          <div id="BlogGratuito_PageMainBoxArticle">
-            <div>
-              <button style="margin-right: 8px;" onclick="_HomePage();">首页</button>
-              <div id="BlogGratuito_PageMainBoxArticleNum">
 
-              </div>
-              <button style="margin-left: 8px;" onclick="_EndPage();">尾页</button>
-            </div>
-          </div>
         </div>
       </div>
       <div id="Blog_MainBoxRM">
@@ -72,9 +64,18 @@
             <p id="BlogGratuito_Copyright"></p>
           </div>
 
+          <div id="BlogGratuito_PageMainBoxArticle">
+              <button style="margin-right: 8px;" onclick="BlogGratuito_HomePage_();">首页</button>
+              <button style="margin-right: 5px;" onclick="BlogGratuito_UpPage();">上一页</button>
+              <b id="BlogGratuito_PageMainBoxArticleNum"></b>
+              <button style="margin-left: 5px;" onclick="BlogGratuito_DownPage();">下一页</button>
+              <button style="margin-left: 8px;" onclick="BlogGratuito_EndPage_();">尾页</button>
+          </div>
+
         </div>
       </div>
     </div>
+    <div style="height: 10px;"><p id="BlogGratuito_Copyright"></p></div>
   </body>
   <!--js-->
   <script type="text/javascript" src="js/index-blog-style.js"></script>

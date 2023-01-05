@@ -66,12 +66,15 @@ p {
 #BlogGratuito_Window{
     position: fixed;
     top: 45%;
+    width: 80%;
+    text-align: center;
     border-radius: 10px;
     font-size: 5em;
     background-color: #00ffe5;
 }
 
 #Blog_HeadM{
+    position: fixed;
     width: 100%;
     z-index: 999;
     margin-bottom: 10px;
@@ -110,13 +113,13 @@ p {
 #Blog_NavigationBar {
     z-index: 999;
     width: 100%;
-    border-style: solid;
-    border-color: #000000;
+    box-shadow: 2px 2px 2px #000000;
     background-color: rgb(174, 253, 253);
     text-align: left;
     border-radius: 5px;
     margin-bottom: 8px;
 }
+
 
 #BlogGratuito_NavigationBarBtnBox button {
     font-size: 1.5em;
@@ -231,7 +234,7 @@ p {
     border-left: #ffffff;
     border-width: 2px;
     box-shadow: 3px 3px 3px #000000;
-    background-color: rgb(253, 255, 223);
+    background-color: rgb(248, 251, 197);
     text-align: left;
 }
 
@@ -274,32 +277,33 @@ p {
     user-select: none;
 }
 
-#BlogGratuito_PageMainBoxArticle>div>div {
+#BlogGratuito_PageMainBoxArticle>b {
     display: inline-block;
-}
-
-#BlogGratuito_PageMainBoxArticle>div>button {
-    display: inline-block;
-    border-color: #000000;
+    background-color: #b8b8b8;
+    padding: 3px;
+    border-radius: 3px;
     font-size: 1.3em;
 }
 
-#BlogGratuito_PageMainBoxArticle>div>div>button {
-    padding: 3px;
-    font-size: 1.2em;
+#BlogGratuito_PageMainBoxArticle>button {
+    vertical-align: top;
+    display: inline-block;
+    border-color: #000000;
+    font-size: 1.3em;
 }
 
 #Blog_MainBoxRM {
     margin-left: 5px;
     width: 25%;
     display: inline-block;
+    position: fixed;
 }
 
 #Blog_MainBoxR div {
     margin-bottom: 10px;
     border-style: solid;
     border-color: #000000;
-    box-shadow: 2px 2px 2px #000000;
+    box-shadow: 2px 2px 2px #757575;
     background-color: rgb(255, 255, 255);
 }
 

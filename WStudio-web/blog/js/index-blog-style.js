@@ -2,7 +2,7 @@
   //网页鼠标点击特效
   var a_idx = 0;
   window.onclick = function (event) {
-    var a = new Array("W❤S");
+    var a = new Array("W💖S");
     var heart = document.createElement("b");
     heart.id = "effect_0";
     //创建b元素
@@ -103,50 +103,39 @@ function date() {
 date();
 setInterval(() => {
   document.getElementById("Blog_Date").innerHTML = date();
-  fromGetBoundingRect_1();
   fromGetBoundingRect_0();
 }, 1);
 function fromGetBoundingRect_0() {
   var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
   {
     var th = document.getElementById("Blog_HeadM").offsetHeight;
+    var w = document.getElementById("Blog_MainBoxRM").offsetWidth;
     if (scrollY > th) {
       if (document.getElementById("Blog_HeadM").style.position == "fixed")
         return;
-      document.getElementById("Blog_HeadM").style.position = "fixed";
-    } else {
-      if (document.getElementById("Blog_HeadM").style.position == "relative")
-        return;
-      document.getElementById("Blog_HeadM").style.position = "relative";
-    }
-  }
-}
-function fromGetBoundingRect_1() {
-  var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
-  var w = document.getElementById("Blog_MainBoxR").offsetWidth;
-  {
-    var th = document.getElementById("Blog_HeadM").offsetHeight;
-    var tth = document.getElementById("Blog_MainBoxR").offsetHeight;
-    if (scrollY > (tth - 20)) {
-      if (document.getElementById("Blog_MainBoxRM").style.position == "fixed")
-        return;
       document.getElementById("Blog_NavigationBar").style.top = th + 10 + "px";
-      document.getElementById("Blog_NavigationBar").style.width = 70 + "%";
-      document.getElementById("Blog_NavigationBar").style.position = "fixed";
       document.getElementById("Blog_MainBoxRM").style.top = th + 10 + "px";
-      document.getElementById("Blog_MainBoxRM").style.position = "fixed";
       document.getElementById("Blog_MainBoxLM").style.left = -(w / 2) + "px";
-      document.getElementById("Blog_MainBoxRM").style.right = (w / 15) + "px";
+      document.getElementById("Blog_MainBoxRM").style.right = w / 15 + "px";
+      Blog_NavigationBar;
+      document.getElementById("Blog_NavigationBar").style.position = "fixed";
+      document.getElementById("Blog_NavigationBar").style.width = "70%";
+      document.getElementById("Blog_HeadM").style.position = "fixed";
+      document.getElementById(
+        "BlogGratuito_NavigationBarBtnBox"
+      ).style.borderStyle = "solid";
     } else {
-      if (
-        document.getElementById("Blog_MainBoxRM").style.position == ""
-      )
-        return;
+      if (document.getElementById("Blog_HeadM").style.position == "") return;
+      document.getElementById("Blog_MainBoxRM").style.top = th + 10 + "px";
+      document.getElementById(
+        "BlogGratuito_NavigationBarBtnBox"
+      ).style.borderStyle = "";
+      document.getElementById("Blog_NavigationBar").style.width = "100%";
       document.getElementById("Blog_NavigationBar").style.position = "";
-      document.getElementById("Blog_NavigationBar").style.width = 100 + "%";
-      document.getElementById("Blog_MainBoxRM").style.position = "";
-      document.getElementById("Blog_MainBoxLM").style.left = 0 + "px";
-      document.getElementById("Blog_MainBoxRM").style.right = 0 + "px";
+      document.getElementById("Blog_HeadM").style.position = "";
     }
   }
 }
+var w = document.getElementById("Blog_MainBoxRM").offsetWidth;
+document.getElementById("Blog_MainBoxLM").style.left = -(w / 2) + "px";
+document.getElementById("Blog_MainBoxRM").style.right = w / 15 + "px";
