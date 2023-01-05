@@ -104,6 +104,7 @@ date();
 setInterval(() => {
   document.getElementById("Blog_Date").innerHTML = date();
   fromGetBoundingRect_0();
+  fromGetBoundingRect_1();
 }, 1);
 function fromGetBoundingRect_0() {
   var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
@@ -115,8 +116,6 @@ function fromGetBoundingRect_0() {
         return;
       document.getElementById("Blog_NavigationBar").style.top = th + 10 + "px";
       document.getElementById("Blog_MainBoxRM").style.top = th + 10 + "px";
-      document.getElementById("Blog_MainBoxLM").style.left = -(w / 2) + "px";
-      document.getElementById("Blog_MainBoxRM").style.right = w / 15 + "px";
       Blog_NavigationBar;
       document.getElementById("Blog_NavigationBar").style.position = "fixed";
       document.getElementById("Blog_NavigationBar").style.width = "70%";
@@ -136,6 +135,41 @@ function fromGetBoundingRect_0() {
     }
   }
 }
-var w = document.getElementById("Blog_MainBoxRM").offsetWidth;
-document.getElementById("Blog_MainBoxLM").style.left = -(w / 2) + "px";
-document.getElementById("Blog_MainBoxRM").style.right = w / 15 + "px";
+
+function fromGetBoundingRect_1() {
+  var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+  {
+    var th = document.getElementById("Blog_MainBoxRM").offsetHeight;
+    var w = document.getElementById("Blog_MainBoxRM").offsetWidth;
+    if (scrollY > th - 20) {
+      if (document.getElementById("Blog_MainBoxRM").style.position == "fixed")
+        return;
+      document.getElementById("Blog_MainBoxLM").style.left = -(w / 1.86) + "px";
+      document.getElementById("Blog_MainBoxRM").style.right = w / 15 + "px";
+      document.getElementById("Blog_MainBoxRM").style.position = "fixed";
+    } else {
+      if (document.getElementById("Blog_MainBoxRM").style.position == "")
+        return;
+      document.getElementById("Blog_MainBoxLM").style.left = 0 + "px";
+      document.getElementById("Blog_MainBoxRM").style.right = 0 + "px";
+      document.getElementById("Blog_MainBoxRM").style.position = "";
+    }
+  }
+}
+
+//网站判断设备
+function browserRedirect() {
+  var sUserAgent = navigator.userAgent.toLowerCase();
+  if (
+    /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(
+      sUserAgent
+    )
+  ) {
+    //移动端
+    document.body.style.zoom = 0.98;
+  } else {
+    //pc端
+    document.body.style.zoom = 1;
+  }
+}
+browserRedirect();

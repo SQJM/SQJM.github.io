@@ -296,7 +296,6 @@ p {
     margin-left: 5px;
     width: 25%;
     display: inline-block;
-    position: fixed;
 }
 
 #Blog_MainBoxR div {
@@ -316,7 +315,8 @@ p {
     padding: 2px;
 }
 
-#BlogGratuito_TagList>span {
+#BlogGratuito_TagList>p {
+    display: inline-block;
     user-select: text;
     border-radius: 5px;
     padding: 2px;
@@ -336,7 +336,7 @@ p {
 }
 
 #Blog_HeadPortrait {
-    width: 120px;
+    width: 90%;
     border-style: solid;
     border-color: #c3c3c3;
     border-radius: 5px;
