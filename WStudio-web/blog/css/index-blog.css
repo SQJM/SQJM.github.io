@@ -63,7 +63,7 @@ p {
     margin: 3px;
 }
 
-#BlogGratuito_Window{
+#BlogGratuito_Window {
     position: fixed;
     top: 45%;
     width: 80%;
@@ -73,7 +73,7 @@ p {
     background-color: #00ffe5;
 }
 
-#Blog_HeadM{
+#Blog_HeadM {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -106,7 +106,7 @@ p {
     position: relative;
 }
 
-#Blog_M{
+#Blog_M {
     z-index: -1;
 }
 
@@ -126,7 +126,7 @@ p {
     margin: 3px;
 }
 
-#BlogGratuito_MainBoxL{
+#BlogGratuito_MainBoxL {
     z-index: -99;
 }
 
@@ -202,6 +202,9 @@ p {
     border-radius: 5px;
     padding: 2px;
     margin-right: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
 }
 
 #BlogGratuito_MainBoxL>div>div>div>span {
@@ -238,6 +241,12 @@ p {
     text-align: left;
 }
 
+#BlogGratuito_MainBoxArticle>div>div>span>span {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+}
+
 #BlogGratuito_MainBoxArticle>div>div>div>span {
     border-radius: 5px;
     padding: 2px;
@@ -268,7 +277,7 @@ p {
     margin-bottom: 8px;
 }
 
-#BlogGratuito_PageMainBoxArticle{
+#BlogGratuito_PageMainBoxArticle {
     background-color: rgb(238, 247, 255);
     padding: 5px;
     margin: 18px;
@@ -310,7 +319,7 @@ p {
     user-select: text;
 }
 
-#BlogGratuito_TagList{
+#BlogGratuito_TagList {
     border-radius: 5px;
     padding: 2px;
 }
@@ -322,13 +331,15 @@ p {
     padding: 2px;
     margin: 5px;
     margin-bottom: 8px;
+    border-style: solid;
+    border-width: 1px;
 }
 
-#BlogGratuito_Copyright{
+#BlogGratuito_Copyright {
     font-size: 1.5em;
 }
 
-#BlogGratuito_Search{
+#BlogGratuito_Search {
     width: 90%;
     margin: 8px;
     padding: 2px;
@@ -337,6 +348,7 @@ p {
 
 #Blog_HeadPortrait {
     width: 90%;
+    max-width: 240px;
     border-style: solid;
     border-color: #c3c3c3;
     border-radius: 5px;

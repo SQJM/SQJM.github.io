@@ -110,7 +110,6 @@ function fromGetBoundingRect_0() {
   var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
   {
     var th = document.getElementById("Blog_HeadM").offsetHeight;
-    var w = document.getElementById("Blog_MainBoxRM").offsetWidth;
     if (scrollY > th) {
       if (document.getElementById("Blog_HeadM").style.position == "fixed")
         return;
@@ -157,6 +156,11 @@ function fromGetBoundingRect_1() {
   }
 }
 
+function go_up() {
+  window.location.hash = "#BlogGratuito_Body";
+  window.location.hash = "";
+}
+
 //网站判断设备
 function browserRedirect() {
   var sUserAgent = navigator.userAgent.toLowerCase();
@@ -166,7 +170,7 @@ function browserRedirect() {
     )
   ) {
     //移动端
-    document.body.style.zoom = 0.98;
+    document.body.style.zoom = 1;
   } else {
     //pc端
     document.body.style.zoom = 1;
