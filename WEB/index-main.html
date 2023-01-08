@@ -1,0 +1,69 @@
+<!--wjm-->
+<!DOCTYPE html>
+<html lang="zh-CMN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--web图标-->
+    <link rel="shortcut icon" href="res/WS.png" />
+    <!--导入css-->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>💖WorldStudio💖</title>
+  </head>
+  <div id="WorldStudio_Window"></div>
+  <!-- WorldStudio_ -->
+  <body id="WorldStudio_Body" style="background-color: rgb(179, 201, 206);">
+    <div id="WorldStudio_Head">
+      <button id="WorldStudio_Head_log" onclick="WorldStudio_Newload();">WorldStudio</button>
+      <button id="WorldStudio_Head_Blog" onclick="WorldStudio_Head_Blog_f();">博客</button>
+    </div>
+    <div style="height: 40px"></div>
+    <div id="WorldStudio_Main">
+
+    </div>
+  </body>
+  <div id="WorldStudio_bottom">
+    <div>
+      <div>
+        <p>联系</p>
+        <dl>
+          <dd><button onclick="WorldStudio_bottom_BBS();">交流群</button></dd>
+        </dl>
+      </div>
+      <div>
+        <p>关于</p>
+        <dl>
+          <dd></dd>
+        </dl>
+      </div>
+      <div>
+        <p>其它</p>
+        <dl>
+          <dd></dd>
+        </dl>
+      </div>
+    </div>
+    <p id="WorldStudio_Copyright"></p>
+  </div>
+  <!--js-->
+  <script type="text/javascript" src="js/index-main-style.js"></script>
+  <script type="text/javascript" src="js/index-main-data.js"></script>
+  <script>
+    Official_Web_Home_Page_F();
+    function WorldStudio_Newload(){
+      location.reload();
+    }
+    function WorldStudio_Head_Blog_f() {
+      var path = "blog/index.html";
+      window.location.href = path;
+    }
+    function WorldStudio_bottom_BBS() {
+      var path = "QQ群:961672864";
+      //window.open(path);
+      alert(path);
+    }
+  </script>
+</html>
