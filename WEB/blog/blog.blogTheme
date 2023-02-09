@@ -1,0 +1,40 @@
+var Web = "https://worldstudio.netlify.app";
+function randomColor() {
+  return (
+    "rgba(" +
+    ~~(Math.round(Math.random() * 255) + 175) +
+    "," +
+    ~~(Math.round(Math.random() * 255) + 155) +
+    "," +
+    ~~(Math.round(Math.random() * 255) + 155) +
+    "," +
+    180 +
+    ")"
+  );
+}
+function _BlogGratuito_Button(id, onclick, text) {
+  var btn =
+    '<button id="' + id + '" onclick="' + onclick + '">' + text + "</button>";
+  return btn;
+}
+function date() {
+  let oDate = new Date();
+  let y = oDate.getFullYear();
+  let M = oDate.getMonth() + 1;
+  let day = oDate.getDate();
+  let h = oDate.getHours();
+  let m = oDate.getMinutes();
+  let s = oDate.getSeconds() + 1;
+  var d = y + "年" + M + "月" + day + "号" + h + "点" + m + "分" + s + "秒";
+  return d;
+}
+date();
+setInterval(() => {
+  document.getElementById("BlogGratuito_Date").innerHTML = date();
+}, 1);
+document.getElementById("BlogGratuito_Head").innerHTML += _BlogGratuito_Button(
+  "BlogGratuito_Blog",
+  "w",
+  "Blog"
+);
+document.getElementById("BlogGratuito_Copyright").innerHTML += "WStudio © 2022";

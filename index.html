@@ -317,7 +317,7 @@
 
     <div id="hj" style="display: inline-block;transform: rotate(-45deg);"><span>🚀</span></div>
     <div id="s_2_box" style="display: inline-block;">
-      <button id="btn" onclick="goWorldStudio();">WorldStudio官网!</button>
+      <button id="btn" onclick="goWorldStudio();" style="font-size: 2em;">WorldStudio官网!</button>
       <br />
       <br />
     </div>
@@ -503,6 +503,22 @@
       window.location.href = path;
     }, 800);
   }
+//网站判断设备
+function browserRedirect() {
+  var sUserAgent = navigator.userAgent.toLowerCase();
+  if (
+    /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(
+      sUserAgent
+    )
+  ) {
+    //移动端
+    document.body.style.zoom = 1;
+  } else {
+    //pc端
+    document.body.style.zoom = 1;
+  }
+}
+browserRedirect();
 </script>
 
 </html>

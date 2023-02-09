@@ -1,0 +1,120 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html::-ms-scrollbar {
+    display: none;
+}
+
+html::-o-scrollbar {
+    display: none;
+}
+
+html::-moz-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #113c38;
+    transition: all 1s;
+}
+
+button:hover {
+    outline: none;
+    color: #579F98;
+    border-bottom-color: #9A9A9A;
+    border-bottom-width: 2px;
+}
+
+button:active {
+    outline: none;
+    color: #00ffe5;
+}
+
+a {
+    color: #000000;
+    outline: none;
+}
+
+.EGET{
+    background-color: #00ffe5;
+    box-shadow: 0px 2px 2px #3e3e3e;
+}
+
+.EGET>p {
+    padding: 5px;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: 1px 1px 1px #808080;
+}
+
+.btnList{
+    background-color: aquamarine;
+    margin: 10px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 2px #ffffff;
+}
+.btnList>button{
+    font-size: 1.3em;
+    background-color: aliceblue;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 1px 1px 3px #000000;
+}
+
+#main{
+    margin: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 3px #000000;
+    transition: all 0.5s;
+}
+
+#main>div{
+    margin: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    user-select:text;
+    background-color: aliceblue;
+    padding: 3px;
+    text-align: left;
+}
+
+#main:hover{
+    box-shadow: 2px 2px 3px #000000;
+}
+
+#main>div>p {
+    text-shadow: 2px 2px 3px #fff;
+    margin-bottom: 3px;
+}
+
+#main>div>button {
+    font-size: 1.2em;
+    background-color: aliceblue;
+    border-radius: 2px;
+    margin: 5px;
+    box-shadow: 1px 1px 3px #000000;
+}
