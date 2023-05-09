@@ -1168,7 +1168,7 @@ var WebGUIJsPro = (function() {
         title,
         data,
         showLocation = "center",
-        showTime = 2.5,
+        showTime = 0,
         parent = document.body
     }) {
         const tipBox = document.createElement("div");
@@ -1210,27 +1210,27 @@ var WebGUIJsPro = (function() {
 
         tipBox.addEventListener("click", function(e) {
             e.stopPropagation();
+
+            if (e.target == closeButton || e.target == okButton) {
+                // 移除提示框和遮罩层
+                parent.removeChild(tipBox);
+                parent.removeChild(mask);
+                // 恢复屏幕滚动
+                $("#html").style.overflowY = "auto";
+            }
+
+            if (e.target == closeButton) {
+                console.log("取消");
+            } else if (e.target == okButton) {
+                console.log("确定");
+            }
+
+
         });
 
         const mask = document.createElement("div");
         mask.className = "w-mask";
         parent.appendChild(mask);
-
-        closeButton.addEventListener("click", function() {
-            // 移除提示框和遮罩层
-            parent.removeChild(tipBox);
-            parent.removeChild(mask);
-            // 恢复屏幕滚动
-            $("#html").style.overflowY = "auto";
-        });
-
-        okButton.addEventListener("click", function() {
-            // 移除提示框和遮罩层
-            parent.removeChild(tipBox);
-            parent.removeChild(mask);
-            // 恢复屏幕滚动
-            $("#html").style.overflowY = "auto";
-        });
 
         if (showTime !== 0) {
             setTimeout(() => {
