@@ -1,1 +1,1 @@
-# WorldStudio
+# SQJM Studio
