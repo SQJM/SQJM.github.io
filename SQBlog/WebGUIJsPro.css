@@ -1,0 +1,430 @@
+/* 全局样式 */
+
+* {
+  z-index: 1;
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 5px;
+  min-height: 5px;
+}
+
+*::selection {
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgb(100, 175, 250);
+}
+
+/* 标准滚动条样式 */
+/* 水平滚动条 */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-moz-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-ms-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* 滚动条轨道 */
+*::-webkit-scrollbar-track {
+  background-color: rgba(160, 230, 255, 1);
+}
+
+*::-moz-scrollbar-track {
+  background-color: rgba(160, 230, 255, 1);
+}
+
+*::-ms-scrollbar-track {
+  background-color: rgba(160, 230, 255, 1);
+}
+
+/* 滚动条滑块 */
+*::-webkit-scrollbar-thumb {
+  background: #0084ff;
+  border: solid 1.5px rgba(160, 230, 255, 1);
+}
+
+*::-moz-scrollbar-thumb {
+  background: #0084ff;
+  border: solid 1.5px rgba(160, 230, 255, 1);
+}
+
+*::-ms-scrollbar-thumb {
+  background: #0084ff;
+  border: solid 1.5px rgba(160, 230, 255, 1);
+}
+
+/* noscript */
+nostript {
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+html {
+  position: static;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body {
+  position: static;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  transition: WebGUIJsPro-opacity 1s ease-in-out;
+}
+
+input {
+  overflow: auto;
+}
+
+hr {
+  min-height: 0px;
+}
+
+button {
+  padding: 2px;
+  font-size: 1em;
+  font-family: 幼圆, sans-serif;
+  transition: all 0.3s;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #00000000;
+  background-color: #c7e6ff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: #000;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.WebGUIJsPro-Widget {
+  margin: 1px;
+  padding: 1px;
+  border: solid 1px #000000;
+}
+
+._WebGUIJsPro_diaLogs {
+  z-index: 998;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  animation: Opacity 0.3s forwards;
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-title {
+  text-align: center;
+  height: 1.2em;
+  padding: 3px;
+  background-color: rgba(109, 178, 234, 1);
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-title>.WebGUIJsPro-diaLogs-icon {
+  float: left;
+  height: 20px;
+  width: 20px;
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-title>.WebGUIJsPro-diaLogs-titleText {
+  font-size: 1em;
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-content {
+  padding: 3px;
+  height: 76%;
+  user-select: text;
+  overflow: auto;
+  white-space: wrap;
+  text-overflow: clip;
+  background-color: rgba(130, 190, 245, 1);
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-content>* {
+  user-select: text;
+  overflow: auto;
+  white-space: wrap;
+  text-overflow: clip;
+
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-buttonBox {
+  padding: 3px;
+  height: 10%;
+  background-color: rgba(147, 204, 251, 0.8);
+}
+
+._WebGUIJsPro_diaLogs>div>.WebGUIJsPro-diaLogs-buttonBox>button {
+  float: right;
+  height: 95%;
+  margin-left: 8px;
+  box-shadow: 1px 1px 2px #777777;
+}
+
+._WebGUIJsPro_diaLogs>.WebGUIJsPro-DiaLogs-info,
+._WebGUIJsPro_diaLogs>.WebGUIJsPro-DiaLogs-inquiry,
+._WebGUIJsPro_diaLogs>.WebGUIJsPro-DiaLogs-warning,
+._WebGUIJsPro_diaLogs>.WebGUIJsPro-DiaLogs-error,
+._WebGUIJsPro_diaLogs>.WebGUIJsPro-DiaLogs-succeed {
+  z-index: 999;
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  min-width: 200px;
+  box-shadow: 0px 0px 5px #232323;
+  background-color: aliceblue;
+  top: 0px;
+  transition: top 0.3s;
+}
+
+.WebGUIJsPro-calendar {
+  text-align: center;
+  padding: 3px;
+  padding-top: 5px;
+  min-width: 240px;
+  min-height: 230px;
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-top>.WebGUIJsPro-calendar-top-up {
+  float: left;
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-top>.WebGUIJsPro-calendar-top-date {
+  font-size: 1.2em;
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-top>.WebGUIJsPro-calendar-top-down {
+  float: right;
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-bottom>table {
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-bottom>table>tbody>tr>.WebGUIJsPro-calendar-bottom-td {
+  transition: all 0.3s;
+  border-radius: 5px;
+  border: solid;
+  border-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-bottom>table>tbody>tr>.WebGUIJsPro-calendar-now {
+  border-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-bottom>table>tbody>tr>.on {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-bottom>table>tbody>tr>.WebGUIJsPro-calendar-slection {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.WebGUIJsPro-calendar>.WebGUIJsPro-calendar-bottom>table>tbody>tr>.WebGUIJsPro-calendar-bottom-td:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.WebGUIJsPro-window {
+  z-index: 995;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 0px 2.5px #232323;
+  border: solid 1px;
+  opacity: 0;
+  animation: WebGUIJsPro-Opacity 0.5s forwards;
+}
+
+.WebGUIJsPro-window:hover {
+  box-shadow: 0px 0px 4px #232323;
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-title {
+  border-bottom: solid 1px;
+  padding: 4px;
+  padding-bottom: 2px;
+  background-color: aliceblue;
+  text-overflow: clip;
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-content {
+  background-color: rgb(255, 255, 255);
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-title>.WebGUIJsPro-diaLogs-icon {
+  width: 20px;
+  display: inline-block;
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-title>.WebGUIJsPro-diaLogs-title-text {
+  margin-left: 3px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-title>.WebGUIJsPro-diaLogs-title-button {
+  z-index: 2;
+  float: right;
+  vertical-align: top;
+  height: 20px;
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-title>.WebGUIJsPro-diaLogs-title-button>.WebGUIJsPro-diaLogs-title-button-close {
+  width: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.WebGUIJsPro-window>.WebGUIJsPro-window-title>.WebGUIJsPro-diaLogs-title-button>.WebGUIJsPro-diaLogs-title-button-close:hover {
+  background-color: red;
+}
+
+._WebGUIJsPro_DropDownBox {
+  display: inline-block;
+  white-space: wrap;
+  text-overflow: clip;
+  padding: 3px;
+}
+
+._WebGUIJsPro_DropDownBox>.title {
+  cursor: pointer;
+  border: solid 1.5px #000;
+  border-radius: 5px;
+  background-color: #c7e6ff;
+}
+
+._WebGUIJsPro_DropDownBox>.title>.title {
+  vertical-align: top;
+  padding: 3px;
+}
+
+._WebGUIJsPro_DropDownBox>.title>.ico {
+  transition: all 0.2s;
+  padding-left: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 20px;
+}
+
+._WebGUIJsPro_DropDownBox>.itemBox {
+  position: absolute;
+  transition: all 0.2s;
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin: 1px;
+  margin-top: 3px;
+}
+
+._WebGUIJsPro_DropDownBox>.itemBox>div {
+  padding: 2px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+._WebGUIJsPro_DropDownBox>.itemBox>div:hover {
+  background-color: #d6d8da;
+}
+
+._WebGUIJsPro_Tabale>table {
+  background-color: aliceblue;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+._WebGUIJsPro_Tabale>table th {
+  border: 1px solid #000000;
+}
+
+._WebGUIJsPro_Tabale>table td {
+  border: 1px solid #000000;
+}
+
+._WebGUIJsPro_Tabale>table>thead>tr>td {
+  cursor: pointer;
+  padding: 3px;
+}
+
+._WebGUIJsPro_DropDownList {
+  display: inline-block;
+  white-space: wrap;
+  text-overflow: clip;
+  padding: 3px;
+}
+
+._WebGUIJsPro_DropDownList>.title {
+  cursor: pointer;
+  border: solid 2px #ffffff;
+  border-radius: 5px;
+  background-color: #c7e6ff;
+}
+
+._WebGUIJsPro_DropDownList>.title>.title {
+  vertical-align: top;
+  padding: 3px;
+}
+
+._WebGUIJsPro_DropDownList>.title>.ico {
+  transition: all 0.2s;
+  padding-left: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 20px;
+}
+
+._WebGUIJsPro_DropDownList>.itemList {
+  position: relative;
+  width: 80%;
+  left: 6%;
+  transition: all 0.2s;
+  background-color: aliceblue;
+  border-radius: 0px 0px 5px 5px;
+  padding: 2px;
+}
+
+._WebGUIJsPro_DropDownList>.itemList>div {
+  padding: 2px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+._WebGUIJsPro_DropDownList>.itemList>div:hover {
+  background-color: #d6d8da;
+}
+
+
+@keyframes WebGUIJsPro-Opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
