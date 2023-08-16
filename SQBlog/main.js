@@ -395,11 +395,25 @@ function init_controlEvent() {
                     text: `是否跳转到 文章?`,
                   }, (select) => {
                     if (select == "确定") {
-                      $("#SQBlog_navigationBar").style.display = "none";
-                      includeJsFile(pagePath + "Article.js", () => {
-                        page_SQBlog_Article(json.aid);
-                        SQBlog_nowPage = "文章";
-                      }, true);
+                      const is = document.createElement("script");
+                      is.src = `./Article/${json.aid}/article.js`;
+                      is.onload = () => {
+                        is.removePro();
+                        $("#SQBlog_navigationBar").style.display = "none";
+                        includeJsFile(pagePath + "Article.js", () => {
+                          page_SQBlog_Article(json.aid);
+                          SQBlog_nowPage = "文章";
+                        }, true);
+                      }
+                      is.onerror = () => {
+                        is.removePro();
+                        new _WebGUIJsPro_DiaLogs({
+                          type: "error",
+                          title: "快链",
+                          text: `没有此文章,无法实现跳转`,
+                        });
+                      }
+                      $("head")[0].appendChild(is);
                     }
                   });
                 } else {
