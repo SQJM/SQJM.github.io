@@ -1,7 +1,8 @@
 var page_SQBlog_home = function () {
     { // init
         $("#SQBlog_openCentent_placeholder").setVisibility(true);
-        $("#SQBlog_closeView").style.display = "block";
+        if (!SQBlog_pageSizeMin)
+            $("#SQBlog_closeView").style.display = "block";
         $("#SQBlog_ArticleListBox").setStyle({
             display: "block"
         });
