@@ -3,5 +3,4 @@
   <li>2.更新代码逻辑</li>
 </ul>
 
-<p>复制到浏览器打开</p>
-<p class="downloadpathuri">https://www.123pan.com/s/TkyA-Cwfmh.html</p>
+<p class="downloadpathuri" style="display:none;">https://www.123pan.com/s/TkyA-Cwfmh.html</p>
