@@ -1,2 +1,7 @@
-<h3>请复制链接到浏览器下载</h3>
-<p><a>https://www.123pan.com/s/TkyA-Wwfmh.html</a></p>
+<h4>更新内容</h4>
+<ul>
+  <li>1.优化控件样式</li>
+  <li>2.更新代码逻辑</li>
+</ul>
+
+<p class="downloadpathuri" style="display: none;"><a>https://www.123pan.com/s/TkyA-Cwfmh.html</a></p>
