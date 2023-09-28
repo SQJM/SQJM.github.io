@@ -1,7 +1,7 @@
-<h4>更新内容</h4>
 <ul>
   <li>1.优化控件样式</li>
   <li>2.更新代码逻辑</li>
 </ul>
 
-<p class="downloadpathuri" style="display: none;"><a>https://www.123pan.com/s/TkyA-Cwfmh.html</a></p>
+<p>复制到浏览器打开</p>
+<p class="downloadpathuri">https://www.123pan.com/s/TkyA-Cwfmh.html</p>
