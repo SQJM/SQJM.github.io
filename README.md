@@ -1,1 +1,1 @@
-# SQJM Studio
+# SQJM
