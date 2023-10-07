@@ -1,0 +1,106 @@
+i {
+    font-style: normal;
+}
+
+input[type="checkbox"] {
+    min-width: 20px;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:disabled {
+    cursor: no-drop;
+}
+
+input[type="radio"] {
+    min-width: 20px;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"]:disabled {
+    cursor: no-drop;
+}
+
+*[weffect="solid"]::after {
+    z-index: 99;
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+*[weffect="solid"]:hover::after {
+    width: 100%;
+}
+
+*[noantime] *,
+*[noantime]::before,
+*[noantime]::after {
+    transition: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    -webkit-tap-highlight-color: #00000000;
+}
+
+*::selection {
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(100, 175, 250);
+}
+
+*,
+*::before,
+*::after {
+    color: #2a2a2a;
+    box-sizing: inherit;
+}
+
+/* 滚动条 */
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-moz-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-ms-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* 滚动条轨道 */
+*::-webkit-scrollbar-track {
+    background-color: rgba(160, 230, 255, 1);
+}
+
+*::-moz-scrollbar-track {
+    background-color: rgba(160, 230, 255, 1);
+}
+
+*::-ms-scrollbar-track {
+    background-color: rgba(160, 230, 255, 1);
+}
+
+/* 滚动条滑块 */
+*::-webkit-scrollbar-thumb {
+    background: #6bb7ff;
+}
+
+*::-moz-scrollbar-thumb {
+    background: #6bb7ff;
+}
+
+*::-ms-scrollbar-thumb {
+    background: #6bb7ff;
+}

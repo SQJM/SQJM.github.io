@@ -1,0 +1,17 @@
+.w-mark {
+    position: relative;
+}
+
+.w-mark::after {
+    content: attr(mark);
+    color: aliceblue;
+    padding: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: red;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    transform: translate(100%, -50%);
+    border-radius: 20px;
+}

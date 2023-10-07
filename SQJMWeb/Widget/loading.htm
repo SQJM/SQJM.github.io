@@ -1,0 +1,57 @@
+<div>
+    <div class="SQJMWeb_Effect_logo_1"></div>
+    <div class="SQJMWeb_Effect_logo_2"></div>
+    <style>
+        .SQJMWeb_Effect_logo_1 {
+            transform: rotate(40deg);
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            height: 300%;
+            animation: SQJMWeb_Effect_logo_1 8s forwards;
+            width: 70px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        @keyframes SQJMWeb_Effect_logo_1 {
+            0% {
+                left: -50%;
+            }
+
+            100% {
+                left: 110%;
+            }
+        }
+
+        .SQJMWeb_Effect_logo_2 {
+            transform: rotate(40deg);
+            position: fixed;
+            top: -50%;
+            left: -30%;
+            height: 300%;
+            animation: SQJMWeb_Effect_logo_2 8s forwards;
+            width: 100px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes SQJMWeb_Effect_logo_2 {
+            0% {
+                left: -30%;
+            }
+
+            48.48% {
+                /* 添加停顿的百分比 */
+                left: 20%;
+            }
+
+            50.50% {
+                /* 添加停顿的百分比 */
+                left: 20%;
+            }
+
+            100% {
+                left: 110%;
+            }
+        }
+    </style>
+</div>

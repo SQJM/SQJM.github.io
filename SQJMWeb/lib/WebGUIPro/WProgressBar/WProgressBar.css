@@ -1,0 +1,58 @@
+w-progress-bar {
+    user-select: none;
+    z-index: 1;
+    display: inline-flex;
+    width: 200px;
+    min-height: 5px;
+    background-color: aliceblue;
+    position: relative;
+    z-index: 0;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+w-progress-bar[column] {
+    transform: rotate(-90deg);
+}
+
+w-progress-bar>input[type="range"] {
+    z-index: 3;
+    width: 100%;
+    height: 5px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+w-progress-bar>.w-progress-bar-unit {
+    position: absolute;
+    right: 0;
+    transform: translate(125%, -50%);
+}
+
+w-progress-bar>.w-progress-bar-bar {
+    z-index: 1;
+    background-color: #95d6ef;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+w-progress-bar[pro]>.w-progress-bar-bar>.w-progress-bar-bar-slider {
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: #f0f8ff;
+    cursor: pointer;
+    box-shadow: 0 0 3px #00000029;
+}
+
+w-progress-bar[pro]>.w-progress-bar-bar>.w-progress-bar-bar-slider:hover {
+    background-color: #e6edf3;
+}

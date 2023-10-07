@@ -1,0 +1,34 @@
+.w-group-btn {
+    display: inline-flex;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8e8e8e7d;
+}
+
+.w-group-btn.def>button {
+    padding: 6px;
+    line-height: 16px;
+    font-size: 16px;
+    white-space: nowrap;
+    background-color: #f0faff;
+    cursor: pointer;
+    border: none;
+    border-right: solid 1.5px #3333333c;
+}
+
+.w-group-btn.def>button[disabled] {
+    cursor: no-drop;
+    background-color: #ecf1f4;
+}
+
+.w-group-btn.def>button:active {
+    background-color: #ecf1f4;
+}
+
+.w-group-btn.def>button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.w-group-btn.def>button:last-child {
+    border: none;
+    border-radius: 0 5px 5px 0;
+}

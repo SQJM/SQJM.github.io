@@ -1,0 +1,75 @@
+.w-message-pro-back {
+    z-index: 999999;
+    position: fixed;
+    display: block;
+    max-height: 100vh;
+    overflow: auto;
+    animation: w-message-back-an 0.5s;
+}
+
+.w-message-pro-back>.w-message-pro-content {
+    animation: w-message-back-an 0.5s;
+}
+
+.w-message-pro-back[LT] {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0%);
+}
+
+.w-message-pro-back[LC] {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, 0%);
+}
+
+.w-message-pro-back[LB] {
+    top: 100%;
+    left: 0;
+    transform: translate(0, -100%);
+}
+
+.w-message-pro-back[CT] {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.w-message-pro-back[CC] {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.w-message-pro-back[CB] {
+    top: 100%;
+    left: 50%;
+    transform: translate(0, -100%);
+}
+
+.w-message-pro-back[RT] {
+    top: 0;
+    right: 0;
+}
+
+.w-message-pro-back[RC] {
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+
+.w-message-pro-back[RB] {
+    top: 100%;
+    right: 0;
+    transform: translate(0, -100%);
+}
+
+@keyframes w-message-pro-back-an {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

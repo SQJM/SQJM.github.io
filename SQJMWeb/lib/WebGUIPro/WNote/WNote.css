@@ -1,0 +1,63 @@
+.w-note {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-left: 15px;
+    border-left: solid 3.5px #333;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #0000004a;
+}
+
+.w-note-icon {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    width: 25px;
+    height: 25px;
+    color: currentColor;
+}
+
+.w-note-icon>.material-icons {
+    color: currentColor;
+    font-size: 25px;
+}
+
+.w-note-content {
+    margin-left: 15px;
+    text-shadow: 0 0 1px #00000084;
+}
+
+.w-note[color="error"] {
+    background-color: #ffbbbb;
+    border-left-color: red;
+    color: red;
+}
+
+.w-note[color="warning"] {
+    background-color: #fff6c2;
+    border-left-color: #ffd900;
+    color: #ffd900;
+}
+
+.w-note[color="info"] {
+    background-color: #c1f3ff;
+    border-left-color: #62e0ff;
+    color: #62e0ff;
+}
+
+.w-note[color="log"] {
+    background-color: #ffecc2;
+    border-left-color: #ffbe32;
+    color: #ffbe32;
+}
+
+.w-note[color="near"] {
+    background-color: #f8fee9;
+    border-left-color: #cdd3bd;
+    color: #cdd3bd;
+}
+
+.w-note[color="smart"] {
+}

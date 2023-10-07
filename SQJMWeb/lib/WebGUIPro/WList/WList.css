@@ -1,0 +1,27 @@
+.w-list {
+    display: inline-flex;
+    align-items: stretch;
+    flex-direction: column;
+    background-color: #f0f8ff;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.w-list>.w-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #d6ebfe84;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.w-list>.w-item:hover {
+    background-color: #cbe4ff;
+}
+
+.w-list>.w-item:last-child {
+    margin-bottom: 0px;
+}

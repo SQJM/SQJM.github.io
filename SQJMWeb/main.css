@@ -1,0 +1,249 @@
+#SQJMWeb_view {
+    filter: blur(0px);
+    animation: SQJMWeb_Logo_box_an 0s;
+    width: 100vw;
+}
+
+#SQJMWeb_nav {
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background-color: rgba(240, 248, 255, 0.8);
+}
+
+#SQJMWeb_nav::after {
+    content: "_";
+    color: #00000000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    height: 72px;
+    z-index: -1;
+    background-color: rgba(240, 248, 255, 0.4);
+    filter: blur(9px);
+}
+
+#SQJMWeb_nav>div {
+    padding: 0 30px;
+}
+
+#SQJMWeb_nav .logo {
+    text-shadow: 0px 0px 2px #0000006b;
+}
+
+#SQJMWeb_content {
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+#SQJMWeb_content_preview {
+    position: relative;
+    height: calc(100vh - 60px - 250px);
+}
+
+#SQJMWeb_content_preview>img {
+    display: block;
+    position: absolute;
+    height: calc(100vh - 60px - 250px);
+    user-select: none;
+    transition: all 1s;
+    opacity: 1;
+}
+
+#SQJMWeb_content_preview>.bimg {
+    height: calc(100vh - 60px - 150px);
+    width: 100%;
+    margin: 0;
+    background: fixed;
+    background-image: url(./test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    filter: blur(100px);
+}
+
+#SQJMWeb_content_preview::after {
+    content: "_";
+    color: #00000000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    height: 90%;
+    z-index: -1;
+    background-color: rgba(127, 255, 212, 0.2);
+    filter: blur(20px);
+}
+
+#SQJMWeb_content_preview>div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    align-items: flex-start;
+    position: absolute;
+    justify-content: center;
+}
+
+#SQJMWeb_content_dynamic {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: -150px;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div1 {
+    display: inline-block;
+    user-select: none;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div2 {
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div2>p {
+    height: 10px;
+    width: 10px;
+    background-color: aliceblue;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div2>p[select] {
+    width: 20px;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div1>.material-icons {
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div1>.l:hover {
+    color: #cbcbcb;
+}
+
+#SQJMWeb_content_dynamic>.div1>.div1>.r:hover {
+    color: #cbcbcb;
+}
+
+#SQJMWeb_content_dynamic>.div2 {
+    background-color: #00000000;
+    margin-top: 10px;
+}
+
+#SQJMWeb_content_info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    position: relative;
+    padding: 30px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 900px) {
+    #SQJMWeb_content_info {
+        flex-wrap: wrap;
+    }
+}
+
+#SQJMWeb_content_info>div {
+    margin: 20px;
+    z-index: 0;
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+    min-height: 250px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SQJMWeb_content_info>.a1 {
+    background-image: url(./test.png);
+}
+
+#SQJMWeb_content_info>.a2 {
+    background-image: url(./SQJM.png);
+}
+
+#SQJMWeb_content_info>.a3 {
+    background-image: url(./test.png);
+}
+
+#SQJMWeb_content_info>div>h2 {
+    z-index: 3;
+    transition: all 0.3s;
+    font-style: italic;
+}
+
+#SQJMWeb_content_info>div::after {
+    transition: all 0.5s;
+    content: "_";
+    color: #00000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3.5px;
+    z-index: 1;
+    background-color: #292929;
+}
+
+#SQJMWeb_content_info>div>h2:hover {
+    scale: 1.5;
+}
+
+#SQJMWeb_content_info>div:hover::after {
+    width: 100%;
+}
+
+#SQJMWeb_content_info>div::before {
+    transition: all 0.2s;
+    content: "_";
+    color: #00000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000000;
+}
+
+#SQJMWeb_content_info>div:hover::before {
+    background-color: #00eded70;
+}
+
+#SQJMWeb_copyright {
+    min-height: 50px;
+    width: 100vw;
+    background-color: #ffffff69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

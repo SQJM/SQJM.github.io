@@ -1,0 +1,87 @@
+
+#MainWindow::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+#MainWindow::-moz-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+#MainWindow::-ms-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+* {
+    /* user-select: none; */
+}
+
+*[alltext] * {
+    user-select: text;
+}
+
+*[alltext] {
+    user-select: text;
+}
+
+*[utext] {
+    user-select: text;
+}
+
+a{
+    cursor: pointer;
+}
+
+body {
+    background: linear-gradient(to right, hsl(1, 84%, 76%), hsl(179, 69%, 79%), hsl(201, 87%, 74%), hsl(248, 52%, 81%), hsl(197, 80%, 81%));
+}
+
+img {
+    width: 100%;
+    font-size: 0px;
+}
+
+svg {
+    font-size: 0px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#MainWindow {
+    overflow-y: auto;
+    background: fixed;
+    background-image: url(./BJ.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#SQJMWeb_Logo_box {
+    text-align: center;
+    filter: blur(0px);
+    letter-spacing: 5px;
+    animation: SQJMWeb_Logo_box_an 5s;
+}
+
+@keyframes SQJMWeb_Logo_box_an {
+    0% {
+        filter: blur(8px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
+
+#SQJMWeb_Logo_box>h1 {
+    margin-top: 1.6em;
+    user-select: text;
+    font-size: 10em;
+    text-shadow: 0px 0px 3px #000000;
+}
+

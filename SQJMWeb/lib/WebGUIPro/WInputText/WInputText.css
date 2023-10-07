@@ -1,0 +1,114 @@
+w-input-text {
+    background-color: #cccccc;
+    border-radius: 5px;
+    min-width: 25px;
+    min-height: 25px;
+    z-index: 0;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+w-input-text[pro] {
+    position: relative;
+    margin-top: 20px;
+}
+
+w-input-text[pro]::after {
+    content: attr(ph);
+    z-index: 2;
+    position: absolute;
+    left: 8px;
+    font-size: 15px;
+    color: #898989;
+    pointer-events: none;
+    transition: all 0.2s;
+    margin-bottom: 2px;
+}
+
+w-input-text:has(input[WValue])[pro]::after {
+    transform: translate3d(0, -25px, 0);
+}
+
+w-input-text[pro][WClickParent]::after {
+    transform: translate3d(0, -25px, 0);
+}
+
+w-input-text[WClickParent] {
+    background-color: #b3dfff;
+}
+
+w-input-text[WClickParent][disabled] {
+    background-color: #dcdcdc;
+}
+
+w-input-text>textarea {
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 25px;
+    min-height: 25px;
+    border: none;
+    outline: none;
+    margin: 2px;
+    padding: 4px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+}
+
+w-input-text[type="texts"][disabled]>textarea {
+    cursor: no-drop;
+}
+
+w-input-text>input {
+    z-index: 1;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 2px;
+    padding: 4px;
+    font-size: 18px;
+    transition: all 0.1s;
+    background-color: rgb(255, 255, 255);
+}
+
+w-input-text[type="number"]>.w-input-text-icon {
+    cursor: pointer;
+    user-select: none;
+    font-size: 25px;
+    transition: all 0.1s;
+    color: #ffffff;
+    text-shadow: 0 0 2px #b3b3b3;
+}
+
+w-input-text[type="number"]>.w-input-text-icon.no {
+    cursor: no-drop;
+}
+
+w-input-text[type="number"][disabled]>.w-input-text-icon {
+    cursor: no-drop;
+    color: #90fff6;
+}
+
+w-input-text[type="number"]>.w-input-text-icon:hover {
+    color: #00ffea;
+}
+
+w-input-text[type="number"][disabled]>.w-input-text-icon:hover {
+    color: #90fff6;
+}
+
+w-input-text[type="number"]>.w-input-text-icon:active {
+    color: #90fff6;
+}
+
+w-input-text[disabled]>input {
+    cursor: no-drop;
+}
+
+w-input-text[WClickParent]>input {
+    background-color: #f2f7f8;
+}
+
+w-input-text>input:hover {
+    background-color: #f2f7f8;
+}

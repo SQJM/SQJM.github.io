@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "MaterialIcons";
+    src: url("../MaterialIcons.woff2");
+}
+
+.material-icons {
+    font-size: 20px;
+    font-family: "MaterialIcons", sans-serif;
+}

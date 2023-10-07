@@ -1,0 +1,65 @@
+w-drop-menu {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+w-drop-menu>.w-title {
+    z-index: 100;
+    user-select: none;
+    display: block;
+    background-color: aliceblue;
+    box-shadow: 0 0 3px #0000003a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 24px;
+    font-size: 18px;
+}
+
+w-drop-menu>.w-title:hover {
+    background-color: rgb(227, 235, 243);
+}
+
+w-drop-menu[iconR]>.w-title {
+    padding-right: 45px;
+}
+
+w-drop-menu[iconL]>.w-title {
+    padding-left: 45px;
+}
+
+w-drop-menu>.w-title>.w-drop-menu-title-icon {
+    transition: all 0.2s;
+    font-size: 25px;
+    right: 10px;
+    position: absolute;
+}
+
+w-drop-menu[iconL]>.w-title>.w-drop-menu-title-icon {
+    right: 0;
+    left: 10px;
+}
+
+w-drop-menu>.w-list {
+    transition: all 0.2s;
+    box-shadow: 0 0 5px #3333336d;
+    position: absolute;
+    top: -10px;
+    z-index: 101;
+    opacity: 0;
+    visibility: hidden;
+}
+
+w-drop-menu[checked]>.w-list {
+    top: 35px;
+    opacity: 1;
+    visibility: visible;
+}
+
+w-drop-menu:has(.w-title[checked])>.w-list {
+    top: -10px;
+    opacity: 0;
+    visibility: hidden;
+}

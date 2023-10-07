@@ -1,0 +1,23 @@
+w-breadcrumbs{
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+}
+
+w-breadcrumbs>.w-breadcrumbs-span {
+    color: #121212;
+    cursor: pointer;
+}
+
+w-breadcrumbs>.w-breadcrumbs-span:hover {
+    color: #4a4a4a;
+}
+
+w-breadcrumbs>.w-breadcrumbs-split {
+    color: #b4b4b4;
+    margin-left: 5px;
+    margin-right: 5px;
+    user-select: none;
+    cursor: context-menu;
+}
