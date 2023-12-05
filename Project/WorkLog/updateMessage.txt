@@ -1,1 +1,1 @@
-{"title":"新版本:1.0.0.9","content":"<ul><li>1.全新架构</li></ul>","downloadlink":"null"}
+{"title":"新版本","content":"<ul><li>1.全新架构</li></ul>","version":"1.0.0.9","downloadlink":"null"}
