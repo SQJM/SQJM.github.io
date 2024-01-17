@@ -1,1 +1,1 @@
-{"title":"新版本","content":"<ul><li>1.底层框架更新</li><li>2.添加手势缩放功能</li><li>3.ui略微改动</li></ul>","version":"1.0.0.9","downloadlink":"https://www.123pan.com/s/TkyA-yfamh.html"}
+{"title":"新版本","content":"<ul><li>1.底层框架更新</li><li>2.添加手势缩放功能</li><li>3.ui略微改动</li></ul>","version":"2.0.0.0","downloadlink":"https://www.123pan.com/s/TkyA-yfamh.html"}
