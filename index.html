@@ -1,1 +1,521 @@
-<html><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./style/theme.css"><link rel="stylesheet" href="./style/index.css"><title>gdrhf</title><link rel="icon" href="./assets/web-icon.png" type="image/png"><script type="text/javascript" src="./script/plugin_Easy.js"></script></head><body><nav class="tb-app-navigation-bar"><span class="site-name"><a href="#">gdrhf</a></span><menu class="menus"><li class="item"><a onclick="TB.Page.select('article-list');">文章</a></li><li class="item"><a onclick="TB.Page.select('classify');">分类</a></li><li class="item"><a onclick="TB.Page.select('tag');">标签</a></li><li class="item"><a onclick="TB.Page.select('friend-link');">友链</a></li><li class="item"><a onclick="TB.Page.select('about');">关于</a></li></menu><a class="drawer-menus" onclick="TB.Page.showDrawerMenus();">•••</a></nav><main class="tb-app-main-view"><div class="tb-app-content-view"><div class="tb-app-main-top-scroll-element"></div><aside class="tb-app-sidebar-view"><div class="tb-app-sidebar-introduction"><img class="tb-app-sidebar-introduction-profile" data-src="./assets/head-portrait.png" title="头像" alt="头像"><p class="tb-app-sidebar-introduction-name">傲天</p><span class="tb-app-sidebar-introduction-constellation">析木</span><span class="tb-app-sidebar-introduction-personalized">ggggggggggggggggggggggggggggggggggggggggggggggggggggggg</span></div><fieldset class="tb-app-sidebar-announcement">hellog<legend>公告</legend></fieldset><fieldset class="tb-app-sidebar-website-info"><p class="item" value="6">文章数目</p><p class="item" value="4">分类</p><p class="item" value="4">标签</p><p class="item" value="2024-09-29">博客创建时间</p><legend>网站资讯</legend></fieldset></aside><div class="tb-app-content-article-list-view select" view=""><div class="tb-app-content-article-list-content"></div><div class="tb-app-content-article-list-paging"><div class="tb-app-content-article-list-paging-left"><a class="tb-app-content-article-list-paging-first" onclick="TB.ArticleListPaging.first()">首页</a><a class="tb-app-content-article-list-paging-up" onclick="TB.ArticleListPaging.up()">«</a></div><ul class="tb-app-content-article-list-paging-numbers"></ul><a class="tb-app-content-article-list-paging-down" onclick="TB.ArticleListPaging.down()">»</a></div></div><div class="tb-app-content-classify-view" view=""><a class="item" onclick="TB.filtrate.classify(this)">dd</a><a class="item" onclick="TB.filtrate.classify(this)">fefwe</a><a class="item" onclick="TB.filtrate.classify(this)">egwaeg</a><a class="item" onclick="TB.filtrate.classify(this)">ff</a></div><div class="tb-app-content-tag-view" view=""><a class="item" onclick="TB.filtrate.tag(this)">fefewgf</a><a class="item" onclick="TB.filtrate.tag(this)">gewger</a><a class="item" onclick="TB.filtrate.tag(this)">rgeg</a><a class="item" onclick="TB.filtrate.tag(this)">rgerghb</a></div><div class="tb-app-content-friend-link-view" view=""><div class="item"><span class="name">fwf</span><a class="link" href="wff">wff</a><span class="introduce">fwf</span></div><div class="item"><span class="name">gewg</span><a class="link" href="gwaerg">gwaerg</a><span class="introduce">gewg</span></div><div class="item"><span class="name">rr</span><a class="link" href="rr">rr</a><span class="introduce">tt</span></div></div><div class="tb-app-content-about-view" view=""><fieldset class="tb-app-content-about-social-contact item"><legend>联系方式</legend><a class="item" href="https://github.com/">GitHub</a><a class="item" href="fewg">fef</a><a class="item" href="gwegew">egw</a><a class="item" href="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff">ffffffffffffffffffffffffffffff</a><a class="item" href="gg">gg</a><a class="item" href="htrt">htre</a></fieldset><div class="tb-app-content-about-more item"><fieldset class="box"><legend>个人介绍</legend><div class="content">我不介绍</div></fieldset></div></div><div class="tb-app-content-article-view" view=""><iframe class="tb-app-content-article-iframe"></iframe></div></div><footer class="tb-app-footer-view"><p class="tb-app-footer-copyright">2024 (C) hi</p><div class="tb-app-footer-embeddable-html">www</div></footer></main><script type="text/javascript" src="./script/index.js"></script><script type="text/javascript" src="./script/user-data.js"></script><script type="text/javascript" src="./script/categories-tags.js"></script><script type="text/javascript" src="./script/friend-link.js"></script><script type="text/javascript" src="./script/config.js"></script><script id="includeArticleListMetaData" type="text/javascript" src="./script/ArticleListMetaData_1.js"></script><script type="text/javascript" src="./script/init.js"></script><script type="text/javascript" src="./script/plugin_Easy.js"></script><script type="text/javascript" src="./script/plugin_Easy.js"></script></body></html>
+<!--wjm-->
+<!DOCTYPE html>
+<html lang="zh-CMN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <!--web图标-->
+  <link rel="shortcut icon" href="WEB/webicon.png" />
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    html {
+      text-align: center;
+      width: 100%;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+
+    html::-ms-scrollbar {
+      display: none;
+    }
+
+    html::-o-scrollbar {
+      display: none;
+    }
+
+    html::-moz-scrollbar {
+      display: none;
+    }
+
+    body {
+      width: 100%;
+    }
+
+    button {
+      vertical-align: top;
+      cursor: pointer;
+      background-color: #ffffff00;
+      font-size: 3em;
+      border-color: #ffffff00;
+      transition: all 0.1s;
+      text-shadow: 2px 2px 2px #0ddfff;
+    }
+
+    button:hover {
+      outline: none;
+      color: #00ffe5;
+    }
+
+    button:focus {
+      outline: none;
+      transform: translateY(10px);
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    #s_1_box {
+      z-index: -1;
+      transform: rotate(320deg);
+      position: fixed;
+      bottom: -33%;
+      width: 10vw;
+      left: 48%;
+    }
+
+    .s_1 {
+      width: 100%;
+      height: 20%;
+      position: relative;
+    }
+
+    .s_1_c {
+      width: 1000%;
+      height: 20%;
+      font-size: 0.6em;
+      text-align: left;
+      padding-left: 23%;
+      animation-iteration-count: infinite;
+    }
+
+        #s_1_boxs {
+          opacity: 0.3;
+      z-index: -2;
+      position: fixed;
+      width: 200%;
+      left: -63%;
+    }
+    .s_1_cs {
+      height: 20px;
+    }
+
+    @keyframes s_1_tag {
+      0% {
+        left: -2%;
+      }
+
+      50% {
+        left: -22%;
+      }
+
+      100% {
+        left: -2%;
+      }
+    }
+
+    @keyframes s_1_boxt {
+      0% {
+        scale: 1;
+      }
+
+      100% {
+        scale: 0;
+      }
+    }
+
+    @keyframes s_t_boxt {
+      0% {
+        color: #00ffe5;
+        scale: 1;
+      }
+
+      100% {
+        color: rgb(6, 255, 6);
+        scale: 350;
+      }
+    }
+
+    #t {
+      background-color: aliceblue;
+      height: 100px;
+    }
+
+    @keyframes tt {
+      0% {
+        color: #00ffe5;
+      }
+
+      50% {
+        color: rgb(238, 6, 255);
+      }
+
+      100% {
+        color: #00ffe5;
+      }
+    }
+
+    span {
+      padding: 10px;
+      text-shadow: 1px 1px 1px #868686;
+      font-size: 3em;
+      transition: all 0.5s;
+    }
+
+    span:hover {
+      font-size: 3.5em;
+    }
+
+    #hj {
+      position: relative;
+    }
+
+    @keyframes hj {
+      0% {
+        top: 0px;
+      }
+
+      100% {
+        top: -1000px;
+      }
+    }
+
+    @keyframes btn {
+      0% {
+        scale: 1;
+      }
+
+      50% {
+        scale: 1.2;
+      }
+
+      100% {
+        scale: 1;
+      }
+    }
+  </style>
+  <title>SQJM Web</title>
+</head>
+<body>
+  <p id="t">
+  <p style="position:relative;top:-80px;text-shadow: 2px 2px 2px #9b9b9b;animation: tt 3s infinite;font-size: 2.8em;">SQJM Web</p>
+  </p>
+  <div style="height: 120px"></div>
+  <div id="s_1_box">
+    <div class="s_1">
+      <div class="s_1_c" style="background-color: rgb(255, 0, 0);border-top-style: solid;border-top-color: #000;">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 2s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(246, 255, 0)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 3s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(123, 255, 0)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 4s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(0, 255, 204)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 5s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(0, 179, 255)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 5.5s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(38, 0, 255)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 4s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(204, 0, 255)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 3s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+      <div class="s_1_c" style="background-color: rgb(255, 0, 102)">
+        <p style="
+              padding-left: 35%;
+              position: relative;
+              animation: s_1_tag 2s infinite;
+              color: rgb(255, 255, 255);
+              text-shadow: 1px 1px 1px #000000;
+            ">
+          SQJM
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div id="s_1_boxs">
+        <div class="s_1_cs" style="background-color: rgb(255, 0, 0)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(246, 255, 0)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(123, 255, 0)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(0, 255, 204)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(0, 179, 255)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(38, 0, 255)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(204, 0, 255)">
+        </div>
+        <div class="s_1_cs" style="background-color: rgb(255, 0, 102)">
+        </div>
+    </div>
+
+    <div id="hj" style="display: inline-block;transform: rotate(-45deg);"><span>🚀</span></div>
+    <div id="s_2_box" style="display: inline-block;">
+      <button id="btn" onclick="goWorldStudio();" style="font-size: 2em;">SQJM 官网 !</button>
+      <br />
+      <br />
+    </div>
+</body>
+<!--js-->
+<script>
+  setInterval(() => {
+    document.getElementById("btn").style.animation = "";
+  }, 2100);
+  function clickEffect() {
+    let balls = [];
+    let longPressed = false;
+    let longPress;
+    let multiplier = 0;
+    let width, height;
+    let origin;
+    let normal;
+    let ctx;
+    const colours = ["#F73859", "#14FFEC", "#00E0FF", "#FF99FE", "#FAF15D"];
+    const canvas = document.createElement("canvas");
+    document.body.appendChild(canvas);
+    canvas.setAttribute(
+      "style",
+      "width: 100%; height: 100%; top: 0; left: 0; z-index: 99999; position: fixed; pointer-events: none;"
+    );
+    const pointer = document.createElement("span");
+    pointer.classList.add("pointer");
+    document.body.appendChild(pointer);
+
+    if (canvas.getContext && window.addEventListener) {
+      ctx = canvas.getContext("2d");
+      updateSize();
+      window.addEventListener("resize", updateSize, false);
+      loop();
+      window.addEventListener(
+        "mousedown",
+        function (e) {
+          document.getElementById("btn").style.animation = "btn 1.6s";
+          pushBalls(randBetween(10, 20), e.clientX, e.clientY);
+          document.body.classList.add("is-pressed");
+          longPress = setTimeout(function () {
+            document.body.classList.add("is-longpress");
+            longPressed = true;
+          }, 500);
+        },
+        false
+      );
+      window.addEventListener(
+        "mouseup",
+        function (e) {
+          clearInterval(longPress);
+          if (longPressed == true) {
+            document.body.classList.remove("is-longpress");
+            pushBalls(
+              randBetween(
+                50 + Math.ceil(multiplier),
+                100 + Math.ceil(multiplier)
+              ),
+              e.clientX,
+              e.clientY
+            );
+            longPressed = false;
+          }
+          document.body.classList.remove("is-pressed");
+        },
+        false
+      );
+      window.addEventListener(
+        "mousemove",
+        function (e) {
+          let x = e.clientX;
+          let y = e.clientY;
+          pointer.style.top = y + "px";
+          pointer.style.left = x + "px";
+        },
+        false
+      );
+    }
+
+    function updateSize() {
+      canvas.width = window.innerWidth * 2;
+      canvas.height = window.innerHeight * 2;
+      canvas.style.width = window.innerWidth + "px";
+      canvas.style.height = window.innerHeight + "px";
+      ctx.scale(5, 5);
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      origin = {
+        x: width / 2,
+        y: height / 2,
+      };
+      normal = {
+        x: width / 2,
+        y: height / 2,
+      };
+    }
+    class Ball {
+      constructor(x = origin.x, y = origin.y) {
+        this.x = x;
+        this.y = y;
+        this.angle = Math.PI * 2 * Math.random();
+        if (longPressed == true) {
+          this.multiplier = randBetween(14 + multiplier, 15 + multiplier);
+        } else {
+          this.multiplier = randBetween(6, 12);
+        }
+        this.vx =
+          (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
+        this.vy =
+          (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
+        this.r = randBetween(8, 12) + 3 * Math.random();
+        this.color = colours[Math.floor(Math.random() * colours.length)];
+      }
+      update() {
+        this.x += this.vx - normal.x;
+        this.y += this.vy - normal.y;
+        normal.x = (-2 / window.innerWidth) * Math.sin(this.angle);
+        normal.y = (-2 / window.innerHeight) * Math.cos(this.angle);
+        this.r -= 0.3;
+        this.vx *= 0.9;
+        this.vy *= 0.9;
+      }
+    }
+
+    function pushBalls(count = 1, x = origin.x, y = origin.y) {
+      for (let i = 0; i < count; i++) {
+        balls.push(new Ball(x, y));
+      }
+    }
+
+    function randBetween(min, max) {
+      return Math.floor(Math.random() * max) + min;
+    }
+
+    function loop() {
+      ctx.fillStyle = "rgba(255, 255, 255, 0)";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < balls.length; i++) {
+        let b = balls[i];
+        if (b.r < 0) continue;
+        ctx.fillStyle = b.color;
+        ctx.beginPath();
+        ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2, false);
+        ctx.fill();
+        b.update();
+      }
+      if (longPressed == true) {
+        multiplier += 0.2;
+      } else if (!longPressed && multiplier >= 0) {
+        multiplier -= 0.4;
+      }
+      removeBall();
+      requestAnimationFrame(loop);
+    }
+
+    function removeBall() {
+      for (let i = 0; i < balls.length; i++) {
+        let b = balls[i];
+        if (
+          b.x + b.r < 0 ||
+          b.x - b.r > width ||
+          b.y + b.r < 0 ||
+          b.y - b.r > height ||
+          b.r < 0
+        ) {
+          balls.splice(i, 1);
+        }
+      }
+    }
+  }
+  clickEffect(); //调用特效函数
+  function goWorldStudio() {
+    var path = "SQJMWeb/index.html";
+    document.getElementById("s_1_box").style.animation = "s_1_boxt 2s";
+    document.getElementById("s_1_box").style.animationFillMode = "forwards";
+    document.getElementById("s_2_box").style.animation = "s_1_boxt 2s";
+    document.getElementById("s_2_box").style.animationFillMode = "forwards";
+    document.getElementById("t").style.animation = "s_t_boxt 3s";
+    document.getElementById("t").style.animationFillMode = "forwards";
+    document.getElementById("hj").style.animation = "hj 2s";
+    document.getElementById("hj").style.animationFillMode = "forwards";
+    setTimeout(() => {
+      window.location.href = path;
+    }, 800);
+  }
+//网站判断设备
+function browserRedirect() {
+  var sUserAgent = navigator.userAgent.toLowerCase();
+  if (
+    /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(
+      sUserAgent
+    )
+  ) {
+    //移动端
+    document.body.style.zoom = 1;
+  } else {
+    //pc端
+    document.body.style.zoom = 1;
+  }
+}
+browserRedirect();
+</script>
+
+</html>
