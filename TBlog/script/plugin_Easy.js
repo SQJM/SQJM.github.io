@@ -1,0 +1,1 @@
+console.log(%22hello%20world!%22)%3B%0D%0Aconsole.log(_POWER_)%3B%0D%0Aconsole.log(%22window%22%2Cwindow)%3B%0D%0AsetInterval(()%3D%3E%7Bconsole.log(%22I%60m%20in%20this%20page%22)%7D%2C1000)%3B
