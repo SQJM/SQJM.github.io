@@ -1,0 +1,1 @@
+ ThisBlog_Data["config"] = {"web-icon":"web-icon.png","web-title":"gdrhf","blog-announcement":"hellog","blog-create-date":"2024-09-29","blog-introduction":"hg","blog-copyright":"2024 (C) hi","blog-footer-embeddableHTML":"www","blog-article-list-show-number":5};ThisBlog_ArticleListMetaDataInfo = {size:2}
