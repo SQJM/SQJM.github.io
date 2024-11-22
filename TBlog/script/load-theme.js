@@ -1,0 +1,1 @@
+( () => { [].forEach( v => { const script = document.createElement( "script" ); script.type = "text/javascript"; script.src = v; document.body.appendChild( script ); } ); [].forEach( v => { const link = document.createElement( "link" ); link.rel = "stylesheet"; link.href = v; document.head.appendChild( link ); } );} )();
