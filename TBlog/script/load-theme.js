@@ -1,1 +1,0 @@
-( () => { ["./script/theme_Easy.js"].forEach( v => { const script = document.createElement( "script" ); script.type = "text/javascript"; script.src = v; document.body.appendChild( script ); } ); ["./style/theme_Easy.css"].forEach( v => { const link = document.createElement( "link" ); link.rel = "stylesheet"; link.href = v; document.head.appendChild( link ); } );} )();
