@@ -1,0 +1,1 @@
+.features-grid.svelte-1q99syj{display:grid;gap:var(--space-lg);grid-template-columns:1fr;max-width:1100px;margin:0 auto;justify-items:center}@media (min-width: 768px){.features-grid.svelte-1q99syj{grid-template-columns:repeat(2,1fr)}}@media (min-width: 1100px){.features-grid.svelte-1q99syj{grid-template-columns:repeat(3,1fr)}}
